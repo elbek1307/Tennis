@@ -1,8 +1,9 @@
-import { useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules"; 
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "swiper/css";
+import "swiper/css/navigation";
 
 import img1 from "../../assets/img/1.jpg";
 import img2 from "../../assets/img/2.jpg";
@@ -13,16 +14,8 @@ import img6 from "../../assets/img/6.jpg";
 import "./Tren.css";
 
 function Tren() {
-  const { t, i18n } = useTranslation();
-  const swiperRef = useRef(null);
-
-  const goPrev = () => {
-    swiperRef.current?.slidePrev();
-  };
-
-  const goNext = () => {
-    swiperRef.current?.slideNext();
-  };
+  const { t } = useTranslation();
+  
 
   return (
     <section className="tren">
@@ -30,29 +23,30 @@ function Tren() {
         <div className="tren_top">
           <h2 className="tren_title">{t("tren.title")}</h2>
           <div className="tren_nav">
+            
             <button
               className="tren_arrow tren_arrow--prev"
               aria-label="prev"
-              onClick={goPrev}
             >
               <FaChevronLeft />
             </button>
             <button
               className="tren_arrow tren_arrow--next"
               aria-label="next"
-              onClick={goNext}
             >
               <FaChevronRight />
             </button>
           </div>
         </div>
 
-    
         <Swiper
           className="tren_swiper"
+          modules={[Navigation]} 
+          navigation={{
+            prevEl: ".tren_arrow--prev", 
+            nextEl: ".tren_arrow--next", 
+          }}
           loop={true}
-          loopAdditionalSlides={6}
-          onSwiper={(swiper) => (swiperRef.current = swiper)}
           spaceBetween={20}
           slidesPerView={1.4}
           breakpoints={{
