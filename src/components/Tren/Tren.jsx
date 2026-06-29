@@ -1,4 +1,4 @@
-import { useRef } from "react";
+\import { useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
@@ -35,15 +35,20 @@ function Tren() {
         </div>
 
         {/*
-          loop={true} - slaydlar oxiriga yetganda yana boshidan davom etadi,
-          shu sababli "Next" tugmasi laptop versiyada ham cheksiz bosiladi.
-          Tugmalar onBeforeInit ichida ulanadi - bu Swiper'ning rasmiy
-          tavsiya etilgan usuli, aks holda loop bilan birga ishlamay qoladi.
+          loop={true} - slaydlar oxiriga yetganda yana boshidan davom etadi.
+          MUHIM TUZATISH: avval 1280px da slidesPerView:6 edi, ya'ni barcha
+          6 ta murabbiy bir vaqtda ko'rinardi - Swiper'da "siljiydigan joy"
+          qolmagani uchun Next bosilganda yumshoq emas, sakrab 1-chiga
+          qaytib ketardi. Endi eng katta ekranda ham 5 ta ko'rinadi (1 tasi
+          zaxirada), shuningdek loopAdditionalSlides qo'shildi - bu Swiper'ga
+          orqa fonda yetarlicha klon slaydlar tayyorlab qo'yishni buyuradi,
+          shu sababli tugma bosilganda endi haqiqiy cheksiz aylanish bo'ladi.
         */}
         <Swiper
           modules={[Navigation]}
           className="tren_swiper"
           loop={true}
+          loopAdditionalSlides={6}
           navigation={true}
           onBeforeInit={(swiper) => {
             swiper.params.navigation.prevEl = prevRef.current;
@@ -55,7 +60,7 @@ function Tren() {
             480: { slidesPerView: 2, spaceBetween: 16 },
             768: { slidesPerView: 3, spaceBetween: 20 },
             1024: { slidesPerView: 4, spaceBetween: 20 },
-            1280: { slidesPerView: 6, spaceBetween: 20 },
+            1280: { slidesPerView: 5, spaceBetween: 20 },
           }}
         >
           <SwiperSlide>
