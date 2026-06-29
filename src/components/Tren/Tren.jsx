@@ -1,11 +1,9 @@
 import { useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import "swiper/css";
-import "swiper/css/navigation";
 
-import starelka from "../../assets/img/starelka.svg";
 import img1 from "../../assets/img/1.jpg";
 import img2 from "../../assets/img/2.jpg";
 import img3 from "../../assets/img/3.jpg";
@@ -15,9 +13,16 @@ import img6 from "../../assets/img/6.jpg";
 import "./Tren.css";
 
 function Tren() {
-  const { t } = useTranslation();
-  const prevRef = useRef(null);
-  const nextRef = useRef(null);
+  const { t, i18n } = useTranslation();
+  const swiperRef = useRef(null);
+
+  const goPrev = () => {
+    swiperRef.current?.slidePrev();
+  };
+
+  const goNext = () => {
+    swiperRef.current?.slideNext();
+  };
 
   return (
     <section className="tren">
@@ -25,27 +30,29 @@ function Tren() {
         <div className="tren_top">
           <h2 className="tren_title">{t("tren.title")}</h2>
           <div className="tren_nav">
-            <button ref={prevRef} className="tren_arrow tren_arrow--prev" aria-label="prev">
-              <img src={starelka} alt="" />
+            <button
+              className="tren_arrow tren_arrow--prev"
+              aria-label="prev"
+              onClick={goPrev}
+            >
+              <FaChevronLeft />
             </button>
-            <button ref={nextRef} className="tren_arrow tren_arrow--next" aria-label="next">
-              <img src={starelka} alt="" />
+            <button
+              className="tren_arrow tren_arrow--next"
+              aria-label="next"
+              onClick={goNext}
+            >
+              <FaChevronRight />
             </button>
           </div>
         </div>
 
- 
-        
+    
         <Swiper
-          modules={[Navigation]}
           className="tren_swiper"
           loop={true}
           loopAdditionalSlides={6}
-          navigation={true}
-          onBeforeInit={(swiper) => {
-            swiper.params.navigation.prevEl = prevRef.current;
-            swiper.params.navigation.nextEl = nextRef.current;
-          }}
+          onSwiper={(swiper) => (swiperRef.current = swiper)}
           spaceBetween={20}
           slidesPerView={1.4}
           breakpoints={{

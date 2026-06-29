@@ -1,12 +1,31 @@
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { FaChevronRight } from "react-icons/fa";
 import "swiper/css";
-import starelka from "../../assets/img/starelka.svg";
+
 import seniImg from "../../assets/img/seni_uslug.jpg";
+import courtsImg from "../../assets/img/tennis1.jpg";
+import gymImg from "../../assets/img/sport-tennis.jpg";
 import "./Seni.css";
 
 function Seni() {
   const { t } = useTranslation();
+
+
+  const [uslugIndex, setUslugIndex] = useState(0);
+
+  const services = [
+    { title: t("seni.cafe"), img: seniImg },
+    { title: t("seni.courts"), img: courtsImg },
+    { title: t("seni.gym"), img: gymImg },
+  ];
+
+  const currentService = services[uslugIndex];
+
+  const handleNextService = () => {
+    setUslugIndex((prev) => (prev + 1) % services.length);
+  };
 
   return (
     <section className="seni">
@@ -14,12 +33,7 @@ function Seni() {
         <div className="seni_abon" data-aos="fade-up">
           <h2 className="seni_abon_title">{t("seni.pricesTitle")}</h2>
 
-          {/*
-            seni_list avval vertikal ro'yxat edi va mobil ekranda
-            sahifani pastga qarab scroll qilib yuborardi. Endi Swiper
-            ichida, gorizontal slayder sifatida ishlaydi - sahifa
-            o'lchami buzilmaydi, kartalar esa siljib o'qiladi.
-          */}
+         
           <Swiper
             className="seni_swiper"
             spaceBetween={16}
@@ -33,33 +47,21 @@ function Seni() {
             <SwiperSlide>
               <div className="seni_item">
                 <p className="seni_item_text">{t("seni.winter")}</p>
-                <span className="seni_item_span">
-                  <img src={starelka} alt="" />
-                </span>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="seni_item">
                 <p className="seni_item_text">{t("seni.subscriptions")}</p>
-                <span className="seni_item_span">
-                  <img src={starelka} alt="" />
-                </span>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="seni_item">
                 <p className="seni_item_text">{t("seni.discounts")}</p>
-                <span className="seni_item_span">
-                  <img src={starelka} alt="" />
-                </span>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="seni_item">
                 <p className="seni_item_text">{t("seni.extraServices")}</p>
-                <span className="seni_item_span">
-                  <img src={starelka} alt="" />
-                </span>
               </div>
             </SwiperSlide>
           </Swiper>
@@ -68,16 +70,23 @@ function Seni() {
         <div className="seni_uslug" data-aos="fade-up" data-aos-delay="150">
           <div className="seni_uslug_top">
             <h2 className="seni_uslug_title">{t("seni.servicesTitle")}</h2>
-            <img src={starelka} alt="" />
+            
+            <button
+              className="seni_uslug_arrow"
+              onClick={handleNextService}
+              aria-label="next service"
+            >
+              <FaChevronRight />
+            </button>
           </div>
 
           <div
             className="seni_uslug_box"
             style={{
-              backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${seniImg})`,
+              backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${currentService.img})`,
             }}
           >
-            <h3 className="seni_uslug_box_title">{t("seni.cafe")}</h3>
+            <h3 className="seni_uslug_box_title">{currentService.title}</h3>
           </div>
         </div>
       </div>

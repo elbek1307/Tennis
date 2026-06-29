@@ -46,18 +46,6 @@
   font-weight: 600;
 }
 
-.seni_item_span {
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-  margin-left: 16px;
-}
-
-.seni_item_span img {
-  width: 18px;
-  transform: rotate(180deg);
-}
-
 .seni_uslug {
   flex: 1;
   min-width: 320px;
@@ -76,6 +64,31 @@
   color: var(--text-color);
 }
 
+.seni_uslug_arrow {
+  background: none;
+  border: 2px solid var(--main-color);
+  color: var(--main-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.seni_uslug_arrow:hover {
+  background-color: var(--main-color);
+  color: #ffffff;
+}
+
+.seni_uslug_arrow:active {
+  transform: scale(0.92);
+}
+
 .seni_uslug_box {
   width: 100%;
   height: 270px;
@@ -86,6 +99,7 @@
   align-items: end;
   padding: 30px;
   border-radius: 6px;
+  transition: background-image 0.3s ease;
 }
 
 .seni_uslug_box_title {
