@@ -1,4 +1,4 @@
-/* ===================== ROOT RANGLAR ===================== */
+
 :root {
   --text-color: #333333;
   --main-color: #8d86c9;
@@ -42,7 +42,7 @@ main {
   background-color: var(--bg-color);
 }
 
-/* ===================== HEADER / VIDEO ===================== */
+
 .header {
   width: 100%;
   position: relative;

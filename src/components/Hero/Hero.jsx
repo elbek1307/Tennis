@@ -20,12 +20,7 @@ function Hero() {
           <p className="hero_box_text">{t("hero.videoText")}</p>
         </div>
 
-        {/*
-          Hero kartalari Swiper ichida: loop={true} bo'lgani uchun
-          slaydlar laptop versiyada ham cheksiz aylanadi (oxiriga
-          yetganda yana boshidan davom etadi). Har bir slide aynan
-          yozilgan, .map() ishlatilmagan.
-        */}
+      
         <Swiper
           className="hero_swiper"
           loop={true}

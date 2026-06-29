@@ -61,7 +61,7 @@ function Navbar({ theme, toggleTheme }) {
             {t("nav.contacts")}
           </a>
 
-          {/* Mobil menyu ichidagi ikonkalar */}
+        
           <div className="nav_mobile_extra">
             <div className="nav_box">
               <a
@@ -89,7 +89,7 @@ function Navbar({ theme, toggleTheme }) {
         </div>
 
         <div className="nav_right">
-          {/* Til tanlash */}
+         
           <div className="lang_switch">
             <button
               className="lang_current"
@@ -127,7 +127,7 @@ function Navbar({ theme, toggleTheme }) {
             )}
           </div>
 
-          {/* Dark mode tugmasi */}
+          
           <button
             className="theme_toggle"
             onClick={toggleTheme}
@@ -137,7 +137,7 @@ function Navbar({ theme, toggleTheme }) {
             {theme === "light" ? <FaMoon /> : <FaSun />}
           </button>
 
-          {/* Desktopdagi ikonkalar */}
+        
           <div className="nav_box nav_box--desktop">
             <a
               href="https://facebook.com"
@@ -161,7 +161,7 @@ function Navbar({ theme, toggleTheme }) {
             </a>
           </div>
 
-          {/* Burger tugmasi */}
+          
           <button
             className="burger"
             onClick={() => setMenuOpen((p) => !p)}

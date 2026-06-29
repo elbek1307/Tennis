@@ -11,7 +11,7 @@ i18n
     fallbackLng: "ru",
     supportedLngs: ["uz", "ru", "en"],
     backend: {
-      // public/locales papkasidagi uz.json, ru.json, en.json fayllarini o'qiydi
+     
       loadPath: "/locales/{{lng}}.json",
     },
     detection: {

@@ -81,7 +81,7 @@
   transform: translateY(-3px);
 }
 
-/* Til tanlash */
+
 .lang_switch {
   position: relative;
 }
@@ -138,7 +138,7 @@
   color: #ffffff;
 }
 
-/* Dark mode tugmasi */
+
 .theme_toggle {
   background: rgba(255, 255, 255, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -158,7 +158,7 @@
   transform: rotate(20deg);
 }
 
-/* Burger */
+
 .burger {
   display: none;
   background: none;
