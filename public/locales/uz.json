@@ -1,0 +1,64 @@
+{
+  "nav": {
+    "home": "Bosh sahifa",
+    "about": "Klub haqida",
+    "tournaments": "Turnirlar",
+    "services": "Xizmatlar",
+    "kids": "Bolalar tennisi",
+    "gallery": "Galereya",
+    "prices": "Narxlar",
+    "contacts": "Kontaktlar"
+  },
+  "hero": {
+    "title": "M.A. Pasechnikov nomidagi Sankt-Peterburg tennis klubi",
+    "videoText": "Klubimiz haqida video tomosha qiling",
+    "service": "Xizmatlar",
+    "courtRent": "Kort ijarasi"
+  },
+  "cards": {
+    "card1": "5 ta yozgi gruntli kortlar",
+    "card2": "«Sun'iy o'tloq» qoplamali zal",
+    "card3": "«Hard» qoplamali zal"
+  },
+  "sport": {
+    "title": "Sport klubi",
+    "text1": "Imperdiet lorem ipsum, pulvinar aliquet sit ultricies in sit turpis. Ultricies erat pretium risus quam tincidunt non viverra porttitor. Sollicitudin enim nunc in nisi donec vel. Blandit mauris vitae amet aliquet ultrices mauris pellentesque. Non ipsum commodo, sit mi sit netus aenean nisl. Donec sit pellentesque enim, vestibulum.",
+    "text2": "Condimentum hac adipiscing purus in augue nisi. Convallis ut nisi.",
+    "listTitle": "Ornare orci ut dictum nulla fames.",
+    "item1": "Euismod diam, vel venenatis bibendum sodales sem hendrerit vulputate sagittis.",
+    "item2": "Nisl senectus sed malesuada donec. Interdum malesuada bibendum imperdiet elementum auctor vitae in.",
+    "item3": "Quam purus ornare dictum pharetra. Sed viverra tellus sollicitudin urna, sagittis.",
+    "item4": "Scelerisque urna senectus commodo, nam. Donec nibh tempus imperdiet nisi, tincidunt mus egestas nisl nullam."
+  },
+  "tren": {
+    "title": "Murabbiylar tarkibi",
+    "t1_name": "Pulvinar aliquam",
+    "t1_text": "Arcu elit massa amet turpis vel consequat pellentesque sit.",
+    "t2_name": "Pretium odio",
+    "t2_text": "Bibendum aliquam volutpat nisl a duis in nisi. In sed commodo lorem morbi quis.",
+    "t3_name": "Aliquet consectetur",
+    "t3_text": "Id sapien sed nibh fermentum massa posuere ipsum. Diam in.",
+    "t4_name": "Blandit augue",
+    "t4_text": "Scelerisque accumsan pretium justo, vitae elit. Dolor semper morbi sit auctor vel diam eros.",
+    "t5_name": "Lorem lacus",
+    "t5_text": "Adipiscing amet, viverra dignissim egestas. Sed nibh egestas venenatis faucibus.",
+    "t6_name": "Sed erat",
+    "t6_text": "Quis ullamcorper pretium lacus risus tellus dolor etiam."
+  },
+  "seni": {
+    "pricesTitle": "Narxlar va abonementlar",
+    "winter": "2021-2022 qishki mavsum",
+    "subscriptions": "Abonementlar",
+    "discounts": "Chegirmalar",
+    "extraServices": "Qo'shimcha xizmatlar",
+    "servicesTitle": "Xizmatlar",
+    "cafe": "Qulay kafe"
+  },
+  "footer": {
+    "rights": "2022 © Barcha huquqlar himoyalangan."
+  },
+  "theme": {
+    "light": "Yorug'",
+    "dark": "Qorong'i"
+  }
+}

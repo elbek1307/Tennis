@@ -1,0 +1,90 @@
+.sport .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+}
+
+.sport_img {
+  width: 550px;
+  height: 500px;
+  z-index: 2;
+  margin-right: -100px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.sport_content {
+  padding: 80px;
+  padding-left: 150px;
+  background-color: var(--section-bg);
+  width: 630px;
+  z-index: 1;
+}
+
+.sport_title {
+  font-size: 38px;
+  color: var(--text-color);
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.sport_text {
+  color: var(--text-color);
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.sport_list_title {
+  color: var(--text-color);
+  font-size: 23px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.sport_list {
+  display: flex;
+  flex-direction: column;
+  list-style: square;
+}
+
+.sport_item {
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.sport_item::marker {
+  color: var(--main-color);
+  font-size: 25px;
+}
+
+@media (max-width: 1024px) {
+  .sport .container {
+    flex-direction: column;
+  }
+
+  .sport_img {
+    width: 100%;
+    height: 350px;
+    margin-right: 0;
+    margin-bottom: -60px;
+  }
+
+  .sport_content {
+    width: 100%;
+    padding: 60px 30px;
+    padding-top: 90px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sport_content {
+    padding: 40px 20px;
+  }
+
+  .sport_title {
+    font-size: 26px;
+  }
+}

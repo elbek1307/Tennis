@@ -1,0 +1,64 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About club",
+    "tournaments": "Tournaments",
+    "services": "Services",
+    "kids": "Kids tennis",
+    "gallery": "Gallery",
+    "prices": "Prices",
+    "contacts": "Contacts"
+  },
+  "hero": {
+    "title": "Saint Petersburg tennis club named after M.A. Pasechnikov",
+    "videoText": "Watch a video about our club",
+    "service": "Services",
+    "courtRent": "Court rental"
+  },
+  "cards": {
+    "card1": "5 outdoor clay courts",
+    "card2": "Hall with «Artificial grass» surface",
+    "card3": "Hall with «Hard» surface"
+  },
+  "sport": {
+    "title": "Sports club",
+    "text1": "Imperdiet lorem ipsum, pulvinar aliquet sit ultricies in sit turpis. Ultricies erat pretium risus quam tincidunt non viverra porttitor. Sollicitudin enim nunc in nisi donec vel. Blandit mauris vitae amet aliquet ultrices mauris pellentesque. Non ipsum commodo, sit mi sit netus aenean nisl. Donec sit pellentesque enim, vestibulum.",
+    "text2": "Condimentum hac adipiscing purus in augue nisi. Convallis ut nisi.",
+    "listTitle": "Ornare orci ut dictum nulla fames.",
+    "item1": "Euismod diam, vel venenatis bibendum sodales sem hendrerit vulputate sagittis.",
+    "item2": "Nisl senectus sed malesuada donec. Interdum malesuada bibendum imperdiet elementum auctor vitae in.",
+    "item3": "Quam purus ornare dictum pharetra. Sed viverra tellus sollicitudin urna, sagittis.",
+    "item4": "Scelerisque urna senectus commodo, nam. Donec nibh tempus imperdiet nisi, tincidunt mus egestas nisl nullam."
+  },
+  "tren": {
+    "title": "Coaching staff",
+    "t1_name": "Pulvinar aliquam",
+    "t1_text": "Arcu elit massa amet turpis vel consequat pellentesque sit.",
+    "t2_name": "Pretium odio",
+    "t2_text": "Bibendum aliquam volutpat nisl a duis in nisi. In sed commodo lorem morbi quis.",
+    "t3_name": "Aliquet consectetur",
+    "t3_text": "Id sapien sed nibh fermentum massa posuere ipsum. Diam in.",
+    "t4_name": "Blandit augue",
+    "t4_text": "Scelerisque accumsan pretium justo, vitae elit. Dolor semper morbi sit auctor vel diam eros.",
+    "t5_name": "Lorem lacus",
+    "t5_text": "Adipiscing amet, viverra dignissim egestas. Sed nibh egestas venenatis faucibus.",
+    "t6_name": "Sed erat",
+    "t6_text": "Quis ullamcorper pretium lacus risus tellus dolor etiam."
+  },
+  "seni": {
+    "pricesTitle": "Prices and subscriptions",
+    "winter": "Winter season 2021-2022",
+    "subscriptions": "Subscriptions",
+    "discounts": "Discounts",
+    "extraServices": "Additional services",
+    "servicesTitle": "Services",
+    "cafe": "Cozy cafe"
+  },
+  "footer": {
+    "rights": "2022 © All rights reserved."
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark"
+  }
+}

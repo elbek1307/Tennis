@@ -1,0 +1,94 @@
+.seni .container {
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.seni_abon {
+  flex: 1;
+  min-width: 320px;
+}
+
+.seni_abon_title {
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 40px;
+}
+
+.seni_list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.seni_item {
+  padding: 20px 30px;
+  width: 100%;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.seni_item:hover {
+  transform: translateX(8px);
+}
+
+.seni_item_text {
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.seni_uslug {
+  flex: 1;
+  min-width: 320px;
+}
+
+.seni_uslug_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.seni_uslug_title {
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.seni_uslug_box {
+  width: 100%;
+  height: 270px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: end;
+  padding: 30px;
+  border-radius: 6px;
+}
+
+.seni_uslug_box_title {
+  font-size: 28px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .seni_uslug_box {
+    height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .seni_abon_title,
+  .seni_uslug_title {
+    font-size: 26px;
+  }
+}
