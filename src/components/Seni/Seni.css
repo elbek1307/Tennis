@@ -19,30 +19,43 @@
   margin-bottom: 40px;
 }
 
-.seni_list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.seni_swiper {
+  width: 100%;
+  padding-bottom: 10px;
 }
 
 .seni_item {
   padding: 20px 30px;
   width: 100%;
+  height: 100%;
   background-color: var(--main-color);
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color: white;
+  border-radius: 8px;
   transition: transform 0.3s ease;
 }
 
 .seni_item:hover {
-  transform: translateX(8px);
+  transform: translateY(-6px);
 }
 
 .seni_item_text {
-  font-size: 21px;
+  font-size: 18px;
   font-weight: 600;
+}
+
+.seni_item_span {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  margin-left: 16px;
+}
+
+.seni_item_span img {
+  width: 18px;
+  transform: rotate(180deg);
 }
 
 .seni_uslug {
